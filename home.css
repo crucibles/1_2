@@ -1,0 +1,96 @@
+h2{
+	padding: auto;
+	margin-left: 20px;
+}
+
+#exampleModalLabel{
+	margin-right: auto;
+}
+
+#screen{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.test{
+	margin: auto;
+	padding: 2px;
+}
+
+#carouselExampleSlidesOnly {
+	width: 25%;
+	overflow: hidden;
+	margin: auto;
+	padding: 20px;
+}
+
+.img{
+	width: 15%;
+	cursor: pointer;
+}
+
+
+.movies{
+	display: table;
+}
+
+
+#menu-outer {
+	height: 84px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 25%;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul#horizontal-list li {
+	display: inline;
+}
+
+
+.details {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.popup:hover .img {
+  opacity: 0.3;
+}
+
+.popup:hover .details {
+  opacity: 1;
+}
+
+.popup {
+  position: relative;
+  width: 50%;
+}
+
+.detailtext {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+
+}
+
+.date{
+	background-color: rgba(0, 0, 0, .6);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
