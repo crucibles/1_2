@@ -1,0 +1,126 @@
+h2{
+	padding: auto;
+	margin-left: 20px;
+}
+
+#exampleModalLabel{
+	margin-right: auto;
+}
+
+#screen{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.test{
+	margin: auto;
+	padding: 2px;
+}
+
+#carouselExampleSlidesOnly {
+	width: 25%;
+	overflow: hidden;
+	margin: auto;
+	padding: 20px;
+}
+
+.img{
+	width: 15%;
+	cursor: pointer;
+}
+
+
+.movies{
+	display: table;
+}
+
+
+#menu-outer {
+	height: 84px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 25%;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul#horizontal-list li {
+	display: inline;
+	width: 15%;
+}
+
+.price{
+	float: right;
+	font-weight: bold;
+}
+
+.rating {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.popup:hover .card-image-top {
+	opacity: 0.3;
+}
+
+.popup:hover .rating {
+	opacity: 1;
+}
+
+.card {
+	position: relative;
+	width: auto;
+	cursor: pointer;
+	float: left;
+	width: 15%;
+	font-size: 80%;
+}
+
+.rate{
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	font-size: 175%;
+	font-weight: bold;
+}
+
+
+.card-body{
+	padding: 2%;
+	font-size: 80%;
+}
+
+.card a{
+	width: 98%;
+	font-size: 80%;
+}
+
+.card-title {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 150%;
+	font-weight: bolder;
+	word-wrap: break-word;
+
+}
+
+.movie-details {
+	height: 100px;
+	word-wrap: break-word;
+	overflow: hidden;
+}

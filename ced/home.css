@@ -1,0 +1,142 @@
+h2{
+	padding: auto;
+	margin-left: 20px;
+}
+
+#exampleModalLabel{
+	margin-right: auto;
+}
+
+#screen{
+	width: 100%;
+	background: black;
+	color: white;
+	border: solid;
+}
+
+.md{
+	width: 90%;
+}
+
+.test{
+	margin: auto;
+	padding: 2px;
+}
+
+#carouselExampleSlidesOnly {
+	width: 25%;
+	overflow: hidden;
+	margin: auto;
+	padding: 20px;
+}
+
+.img{
+	width: 15%;
+	cursor: pointer;
+}
+
+
+.movies{
+	display: table;
+}
+
+
+#menu-outer {
+	height: 84px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 25%;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul#horizontal-list li {
+	display: inline;
+	width: 15%;
+}
+
+#price{
+	float: right;	
+}
+
+.details {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.popup:hover .img {
+	opacity: 0.3;
+}
+
+.popup:hover .details {
+	opacity: 1;
+}
+
+.popup {
+	position: relative;
+	width: auto;
+	cursor: pointer;
+}
+
+.detailtext {
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	font-size: 70%;
+	padding: auto;
+
+}
+
+.date{
+	background-color: rgba(0, 0, 0, .6);
+	color: white;
+	font-size: 70%;
+	padding: auto;
+}
+
+
+.card{
+	float: left;
+	width: 15%;
+}
+
+.card-body{
+	padding: 2%;
+	font-size: 80%;
+}
+
+.card a{
+	width: 98%;
+}
+
+.row{
+	height: 0;
+}
+
+.row-space{
+	margin-left: 10%;
+}
+
+.modal-body{
+	padding: 0;
+}
+
+.row-space button{
+	margin-block-start: 2px;
+	font-size: x-small;
+}
+
+.seats{
+	margin: 5%;
+}

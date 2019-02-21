@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<span class="navbar-brand mb-0 h1">Movie Reservation System</span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Now Showing <span class="sr-only">(current)</span></a>
+				</li>
+
+				<li class="nav-item active">
+					<a class="nav-link" href="transaction.html">Transactions <span class="sr-only"></span></a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Show by
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Date</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Genre</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Rating</a>
+						<div class="dropdown-divider"></div>
+					</div>
+				</li>
+
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+
+
+	<h2>Now Showing</h2>
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="alita.jpg" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="adog.jpg" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="howto.jpg" alt="Third slide">
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="dropdown-divider"></div>
+	<div class="dropdown-divider"></div>
+
+
+	<h2>Movies</h2>
+
+	<div id="menu-outer">
+		<div class="table">
+			<ul id="horizontal-list">
+				
+				<li >
+
+					<div class="card">
+						<div class="popup">
+							<img src="alita.jpg" class="card-img-top" alt="..." >
+							<div class="rating">
+								<div class="rate">4.0 &#9734</div>
+							</div>
+						</div>
+						
+						<div class="card-body">
+							<span class="price">Php 150</span> 
+							<div class="movie-details">
+								<p class="card-text">
+									<h5 class="card-title"><span class="title">Alita</span> </h5>
+									<strong>Cinema 1 |	Feb 6, 2019</strong>
+									<p>A restored cyborg with a heart and soul of a young woman discovers with her caretaker that she is more than what she seems.</p>
+								</p>
+							</div>
+							
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
+						</div>
+					</div>
+
+				</li>
+
+				<li >
+
+					<div class="card">
+						<div class="popup">
+							<img src="adog.jpg" class="card-img-top" alt="...">
+							<div class="rating">
+								<div class="rate">4.0 &#9734</div>
+							</div>
+						</div>
+						
+						<div class="card-body">
+							<span class="price">Php 250</span>
+							<div class="movie-details">
+								<p class="card-text">
+									<h5 class="card-title"><span class="title">A Dog's Way Home</span>  </h5>
+									<strong>Cinema 1 |	Feb 6, 2019</strong>
+									<p>A dog travels 400 miles in search of her owner.</p>
+								</p>
+							</div>
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
+						</div>
+					</div>
+
+				</li>
+
+				<li >
+
+					<div class="card">
+						<div class="popup">
+							<img src="howto.jpg" class="card-img-top" alt="...">
+							<div class="rating">
+								<div class="rate">4.0 &#9734</div>
+							</div>
+						</div>
+						
+						<div class="card-body">
+							<span class="price">Php 250</span>
+							<div class="movie-details">
+								<p class="card-text">
+									<h5 class="card-title"><span class="title">How to Train a Dragon</span>  </h5>
+									<strong>Cinema 1 |	Feb 20, 2019</strong>
+									<p>Now chief and ruler of Berk alongside Astrid, Hiccup has created a gloriously chaotic dragon utopia, but the sudden appearance of female Light Fury coincides with the darkest threat their village has ever faced.</p>
+								</p>
+							</div>
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
+						</div>
+					</div>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+<!-- Modal for seat plan sample -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Seat Plan</h5>
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<button id="screen" class="btn-secondary" disabled>SCREEN</button>
+
+				<div id="seats">
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-danger">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-success">1</button>
+					<button class="btn btn-secondary">1</button>
+					<button class="btn btn-secondary">1</button>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<div>
+					<span class="badge badge-pill badge-success">Selected</span>
+					<span class="badge badge-pill badge-danger">Sold Out</span>
+					<span class="badge badge-pill badge-secondary">Available</span>
+				</div>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Create Booking</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</html>
