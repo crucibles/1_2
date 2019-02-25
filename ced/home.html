@@ -10,7 +10,7 @@
 
 
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<span class="navbar-brand mb-0 h1">Movie Reservation System</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -34,8 +34,6 @@
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Date</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Genre</a>
-						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Rating</a>
 						<div class="dropdown-divider"></div>
 					</div>
@@ -51,7 +49,7 @@
 
 
 	<h2>Now Showing</h2>
-	<div class="showing">
+	<div class="container-fluid">
 		<div id="carouselExampleIndicators" class="carousel slide" data-interval="2000">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -62,16 +60,16 @@
 
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="alita.jpg" alt="First slide">
+					<img class="d-block w-100" src="0car.jpg" alt="First slide">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="adog.jpg" alt="Second slide">
+					<img class="d-block w-100" src="1car.jpg" alt="Second slide">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="howto.jpg" alt="Third slide">
+					<img class="d-block w-100" src="2car.jpg" alt="Third slide">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="lego.jpg" alt="Fourth slide">
+					<img class="d-block w-100" src="3car.jpg" alt="Fourth slide">
 				</div>
 			</div>
 
@@ -98,207 +96,7 @@
 		<div class="table">
 			<ul id="horizontal-list">
 				
-				<li >
-
-
-
-					<div class="card">
-
-						<div class="popup">
-							<img src="alita.jpg" class="card-img-top">
-							<div class="rating">
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<div class="movie-details">
-								<p class="card-text">
-									<strong>Cinema</script></strong>
-								</p>
-							</div>
-							
-							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary" data-backdrop="static" >Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="adog.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">A Dog's Way Home</h5>
-									<strong>Cinema 1 |	Feb 6, 2019</strong>
-									<p>A dog travels 400 miles in search of her owner.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="howto.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">How to Train a Dragon </h5>
-									<strong>Cinema 1 |	Feb 20, 2019</strong>
-									<p>Now chief and ruler of Berk alongside Astrid, Hiccup has created a gloriously chaotic dragon utopia, but the sudden appearance of female Light Fury coincides with the darkest threat their village has ever faced.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="lego.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">The Lego Movie 2 </h5>
-									<strong>Cinema 4 |	Feb 8, 2019</strong>
-									<p>Emmet, Lucy and Batman are back for an adventure. This time, to face a new threat which destroys everything in its path.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="quake.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">The Quake </h5>
-									<strong>Cinema 1 |	Feb 20, 2019</strong>
-									<p>A geologist races against time to save his estranged wife and two children when a devastating earthquake strikes Oslo, Norway.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="knight.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">The Kight of Shadows</h5>
-									<strong>Cinema 1 |	Feb 20, 2019</strong>
-									<p>A legendary demon hunter, assisted by a lawman protégé and a motley group of friendly monsters, track down beasts that enter the human dimension.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-					<div class="card">
-						<div class="popup">
-							<img src="prodigy.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">The Prodigy </h5>
-									<strong>Cinema 1 |	Feb 20, 2019</strong>
-									<p>A mother concerned about her young son’s disturbing behavior thinks something supernatural may be affecting him.</p>
-								</p>
-							</div>
-							<a data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
-				<li >
-
-
-					<div class="card">
-						<div class="popup">
-							<img src="cold.jpg" class="card-img-top" alt="...">
-							<div class="rating">
-								<div class="rate">4.0 &#9734</div>
-							</div>
-						</div>
-						
-						<div class="card-body">
-							<strong>Php 250</strong>
-							<div class="movie-details">
-								<p class="card-text">
-									<h5 class="card-title">Cold Pursuit</h5>
-									<strong>Cinema 1 |	Feb 20, 2019</strong>
-									<p>A snowplow driver seeks revenge against the drug dealers he thinks killed his son.</p>
-								</p>
-							</div>
-							<a data-keyboard="true" data-backdrop="static" data-toggle="modal" data-target=".bd-example-modal-lg" href="" class="btn btn-primary">Book Now</a>
-						</div>
-					</div>
-
-				</li>
-
+				<script type="text/javascript">movieList();</script>
 
 			</ul>
 
@@ -332,7 +130,7 @@
 
 				<div class="seats" id="sp" onclick="seatClick(event)">
 
-					<script type="text/javascript">setSeatPlan();</script>
+					<script type="text/javascript">initializeSeatPlan();</script>
 					
 				</div>
 
@@ -340,10 +138,10 @@
 
 			<div class="modal-body"	id="confirm-booking" hidden="">
 				<ul>
-					<li>Movie Title: </li>
-					<li>Cinema Num: </li>
-					<li>Seats: </li>
-					<li>Total Price: </li>
+					<li id="modal-movie-title">Movie Title: </li>
+					<li id="modal-cinema-num">Cinema Num: </li>
+					<li id="modal-seats">Seats: </li>
+					<li id="modal-price">Total Price: </li>
 				</ul>
 			</div>
 

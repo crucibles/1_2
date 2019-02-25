@@ -1,3 +1,7 @@
+body {
+	padding-top: 5%;
+}
+
 h2{
 	padding: auto;
 	margin-left: 20px;
@@ -24,10 +28,14 @@ h2{
 }
 
 #carouselExampleIndicators {
-	width: 25%;
 	overflow: hidden;
 	margin: auto;
 	padding: auto;
+}
+
+#carouselExampleIndicators img{
+	min-height: 500px;
+	max-height: 500px;
 }
 
 .img{
@@ -70,9 +78,7 @@ ul#horizontal-list li {
 	transition: .5s ease;
 	opacity: 0;
 	position: absolute;
-	top: 0%;
-	left: 0%;
-	-ms-transform: translate(-50%, -50%);
+	top: 0;
 	text-align: center;
 }
 
@@ -98,7 +104,7 @@ ul#horizontal-list li {
 .rate{
 	background-color: rgba(0, 0, 0, 1);
 	color: white;
-	font-size: 80%%;
+	font-size: 100%;
 	font-weight: bold;
 }
 
@@ -169,4 +175,16 @@ ul#horizontal-list li {
 	.modal {
 		width: 600px;
 	}
+}
+
+.carousel-control-prev {
+	width: 5%;
+}
+
+.carousel-control-next {
+	width: 5%;
+}
+
+.legend {
+	margin: auto;
 }
