@@ -119,9 +119,15 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="modal-label">Seat Plan</h5>
+				<h5 class="modal-title" id="modal-seat-plan">Seat Plan</h5>
 
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<a class="dropdown-toggle" href="#" id="movie-date" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+
+				<div class="dropdown-menu" aria-labelledby="movie-date" id="date-choices">
+
+				</div>
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
@@ -152,8 +158,12 @@
 					<span class="badge badge-pill badge-secondary">Available</span>
 				</div>
 				<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-				<button data-toggle="modal" data-target="#booking" type="button" class="btn btn-primary" onclick="createBooking(event)">
+				<button id="create-booking" data-toggle="modal" data-target="#booking" type="button" class="btn btn-primary" onclick="createBooking(event)">
 					Create Booking
+				</button>
+
+				<button id="check-out" data-toggle="modal" data-target="#booking" type="button" class="btn btn-primary" onclick="checkOut()" hidden="">
+					Check out
 				</button>
 			</div>
 		</div>

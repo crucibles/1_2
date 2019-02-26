@@ -7,8 +7,13 @@ h2{
 	margin-left: 20px;
 }
 
-#modal-label{
+#modal-seat-plan{
 	margin-right: auto;
+}
+
+#movie-date{
+	font-size: 105%;
+	margin: auto;
 }
 
 #screen{
