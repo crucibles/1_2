@@ -1,5 +1,4 @@
 
-
 var movie0 = {
 	id: 0,
 	title: "Alita",
@@ -104,15 +103,28 @@ var movie7 = {
 	rate: 4.0
 }
 
+var my_transactions = {
+	my_transactions: []
+}
+
 
 var movies = new Array(movie0, movie1, movie2, movie3, movie4, movie5, movie6, movie7);
 var myStorage = window.localStorage;
 
 var selected_movie = {};
 var selected_date = "";
+var selected_seats = [];
+var total_price = 0;
 
+$(document).ready(function(){
+	$('[data-toggle="popover"]').popover();   
+});
 
 window.onload = function(){
+
+	var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+
+
 
 	for(var i=0; i<movies.length; i++){
 		if(myStorage.getItem("movie" + i) == undefined){
@@ -123,9 +135,10 @@ window.onload = function(){
 		}
 	}
 
-	if(myStorage.getItem("my-transactions") == undefined){
-		myStorage.setItem("my-transactions", JSON.stringify([]))
+	if(myStorage.getItem("my_transactions") == undefined){
+		myStorage.setItem("my_transactions", JSON.stringify(my_transactions) );
 	}
+
 }
 
 function getMovieTitle(id) {
@@ -311,9 +324,10 @@ function createBooking(e){
 	var rows = [];
 	var reserved_rows = [];
 	var seats_string = [];
-	var seat_names = [];
+	selected_seats = [];
+	
 	var temp_string = "";
-	var total_price = 0;
+	total_price = 0;
 	var updated = JSON.parse(myStorage.getItem("movie" + selected_movie.id));
 	console.log(updated);
 	var updated_sp = updated.seat_plan.filter(sp => sp.date == selected_date)[0].sp;
@@ -333,7 +347,7 @@ function createBooking(e){
 		Array.from(current_row.children).filter(seat => { 
 
 			if(seat.className == "btn btn-success"){
-				seat_names.push(current_row.id + seat.innerHTML);
+				selected_seats.push(current_row.id + seat.innerHTML);
 				updated_sp.push(current_row.id + seat.innerHTML);
 				// printing seats that will be reserved before confirming or checking it out
 				document.getElementById("modal-seats").innerHTML += current_row.id + seat.innerHTML + ",";
@@ -353,13 +367,11 @@ function createBooking(e){
 
 function checkOut(){
 	myStorage.setItem("movie" + selected_movie.id, JSON.stringify(selected_movie));
-	var my_transactions = myStorage.getItem("my-transactions");
+	var my_transactions = JSON.parse(myStorage.getItem("my_transactions"));
 
-	console.log(my_transactions);
+	my_transactions.my_transactions.push({movie_id: selected_movie.id, date: selected_date , selected_seats: JSON.stringify(selected_seats), total_price: total_price});
+	myStorage.setItem("my_transactions", JSON.stringify(my_transactions));
 
-	//  set to be reserved in my transactions
-
-	// temporary make new modal for the booking details
 	location.reload();
 }
 

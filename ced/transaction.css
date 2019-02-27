@@ -3,16 +3,28 @@ h2{
 	margin-left: 20px;
 }
 
-#exampleModalLabel{
+body{
+	min-width: 400px;
+}
+
+#modal-seat-plan{
 	margin-right: auto;
 }
 
+#transaction-heading{
+	padding: 1%;
+}
+
 #screen{
-	width: 100%;
-	margin-bottom: 20px;
+	width: 99%;
 	background: black;
 	color: white;
 	border: solid;
+}
+
+
+#exampleModalLabel{
+	margin-right: auto;
 }
 
 
